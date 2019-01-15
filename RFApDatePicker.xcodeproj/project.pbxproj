@@ -15,6 +15,7 @@
 		5C1F168321EDA9A7001DAAC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F168221EDA9A7001DAAC7 /* main.m */; };
 		5C1F168D21EDA9A8001DAAC7 /* RFApDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F168C21EDA9A8001DAAC7 /* RFApDatePickerTests.m */; };
 		5C1F169821EDA9A8001DAAC7 /* RFApDatePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F169721EDA9A8001DAAC7 /* RFApDatePickerUITests.m */; };
+		5C1F16A821EDA9D2001DAAC7 /* RFApDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F16A721EDA9D2001DAAC7 /* RFApDatePickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5C1F169321EDA9A8001DAAC7 /* RFApDatePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFApDatePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1F169721EDA9A8001DAAC7 /* RFApDatePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFApDatePickerUITests.m; sourceTree = "<group>"; };
 		5C1F169921EDA9A8001DAAC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1F16A621EDA9D2001DAAC7 /* RFApDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFApDatePickerView.h; sourceTree = "<group>"; };
+		5C1F16A721EDA9D2001DAAC7 /* RFApDatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFApDatePickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		5C1F167221EDA9A6001DAAC7 /* RFApDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				5C1F16A521EDA9B1001DAAC7 /* RFApDatePickerView */,
 				5C1F167321EDA9A6001DAAC7 /* AppDelegate.h */,
 				5C1F167421EDA9A6001DAAC7 /* AppDelegate.m */,
 				5C1F167621EDA9A6001DAAC7 /* ViewController.h */,
@@ -130,6 +134,15 @@
 				5C1F169921EDA9A8001DAAC7 /* Info.plist */,
 			);
 			path = RFApDatePickerUITests;
+			sourceTree = "<group>";
+		};
+		5C1F16A521EDA9B1001DAAC7 /* RFApDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				5C1F16A621EDA9D2001DAAC7 /* RFApDatePickerView.h */,
+				5C1F16A721EDA9D2001DAAC7 /* RFApDatePickerView.m */,
+			);
+			path = RFApDatePickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +278,7 @@
 				5C1F167821EDA9A6001DAAC7 /* ViewController.m in Sources */,
 				5C1F168321EDA9A7001DAAC7 /* main.m in Sources */,
 				5C1F167521EDA9A6001DAAC7 /* AppDelegate.m in Sources */,
+				5C1F16A821EDA9D2001DAAC7 /* RFApDatePickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
