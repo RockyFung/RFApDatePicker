@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void(^myBlock)(NSString *day, NSInteger hour , NSInteger minute);
+typedef void(^myBlock)(NSString *dateStr);
 
 @interface RFApDatePickerView : UIView
 @property (nonatomic, copy) myBlock selectedBlock;

@@ -126,7 +126,7 @@ static RFApDatePickerView *_view = nil;
 //        NSString *strDate = [dateFormatter stringFromDate:self.pickerView.date];
         
         if (self.selectedBlock) {
-            self.selectedBlock(_selectedDayStr, [_selectedHourStr integerValue], [_selectedMinStr integerValue]);
+            self.selectedBlock([NSString stringWithFormat:@"%@-%@-%@",_selectedDayStr, _selectedHourStr, _selectedMinStr]);
         }
     }
 }
@@ -171,6 +171,7 @@ static RFApDatePickerView *_view = nil;
     
     [self refreshDateDictWithRow:row component:component];
 
+    // 获取选择的日期
     __block BOOL contains = NO;
     if (component == 0) {
         _selectedDayStr = [NSString stringWithFormat:@"%@",self.dateDic[@"0"][row]];

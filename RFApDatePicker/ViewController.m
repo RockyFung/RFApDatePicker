@@ -20,8 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 300, 200, 40)];
-    [btn setTitle:@"预约日期" forState:UIControlStateNormal];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 300, [UIScreen mainScreen].bounds.size.width, 40)];
+    btn.backgroundColor = [UIColor cyanColor];
+    [btn setTitle:@"选择我预约日期" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(showDatePickerView) forControlEvents:UIControlEventTouchUpInside];
@@ -30,8 +31,8 @@
 
 
 - (void)showDatePickerView{
-    [RFApDatePickerView showPickerViewDateBlock:^(NSString *day, NSInteger hour , NSInteger minute) {
-        [self->_btn setTitle:[NSString stringWithFormat:@"%@-%ld-%ld",day,hour,minute] forState:UIControlStateNormal];
+    [RFApDatePickerView showPickerViewDateBlock:^(NSString *dateStr) {
+        [self->_btn setTitle:dateStr forState:UIControlStateNormal];
     }];
 }
 
